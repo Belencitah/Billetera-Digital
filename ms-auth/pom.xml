@@ -95,7 +95,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
+                <version>2020.0.3</version> <!-- compatible con Spring Boot 2.5.4 -->
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -112,6 +112,7 @@
                 <configuration>
                     <release>17</release>
                     <fork>true</fork>
+                    <!--suppress UnresolvedMavenProperty -->
                     <executable>${JAVA_HOME}/bin/javac</executable>
                     <annotationProcessorPaths>
                         <path>
